@@ -1,7 +1,8 @@
 :root {
     --background: rgb(224, 234, 247);
-    --header-background: white;
+    --header-background: rgb(23, 78, 165);
     --footer-background: rgb(243, 242, 242);
+    --border-radius: 20px;
 }
 
 body {
@@ -10,6 +11,7 @@ body {
     background: var(--background);
     display: grid;
     grid-template-rows: auto 1fr auto;
+    border: solid 1px black;
 }
 
 header {
@@ -20,10 +22,6 @@ header {
     background-color: var(--header-background);
 }
 
-main {
-    padding: 20px;
-}
-
 footer {
     position: sticky;
     bottom: 0;
@@ -32,4 +30,34 @@ footer {
     display: flex;
     justify-content: flex-end;
     background-color: var(--footer-background);
+}
+
+#name-tag {
+    height: 280px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center; 
+    background-color: rgb(23, 78, 165);
+    border-radius: var(--border-radius);    
+}
+
+#greeting, #footer {
+    text-align: center;
+    justify-content: center;
+    color:rgb(243, 242, 242);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#name-div {
+    height: 60%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
